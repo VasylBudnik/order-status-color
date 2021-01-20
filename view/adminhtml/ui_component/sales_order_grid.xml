@@ -1,13 +1,23 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <listing xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="urn:magento:module:Magento_Ui:etc/ui_configuration.xsd">
     <columns name="sales_order_columns">
-        <column name="status" component="Learning_StatusColor/js/grid/columns/select">
+        <!-- <column name="status" component="Learning_StatusColor/js/grid/columns/select">
             <settings>
                 <filter>select</filter>
                 <options class="Magento\Sales\Ui\Component\Listing\Column\Status\Options"/>
                 <dataType>select</dataType>
                 <label translate="true">Status</label>
             </settings>
+        </column> -->
+        
+        <column name="shipping_information">
+            <settings>
+                <filter>text</filter>
+                <label translate="true">Shipping Information</label>
+                <visible>false</visible>
+            </settings>
         </column>
+        
+        
     </columns>
 </listing>
